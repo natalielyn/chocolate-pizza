@@ -75,16 +75,18 @@ header {
   }
 
 
+
 #listleft {
   position: absolute;
-  top: 1240px;
+  top: 1050px;
   font-size: 30px;
   right: 950px;
 }
 
+
 #listright {
   position: absolute;
-  top: 1240px;
+  top: 1050px;
   right: 500px;
   font-size: 30px;
 }
@@ -93,8 +95,27 @@ header {
   list-style-type: none;
 }
 
-footer {
+
+#authorsection {
+  display: flex;
   align-content: center;
-}
+  justify-content: space-between;
+ }
 
+ #authorleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  }
 
+  #authorright {
+    display: flex;
+    align-items: center;
+  }
+
+  #authorleft p {
+    margin: auto;
+    text-align: center;
+    float: right;
+   }
