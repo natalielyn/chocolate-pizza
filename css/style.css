@@ -11,7 +11,17 @@ header {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+h2 {
+  font-family: 'Pacifico', cursive;
+}
 
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  font-family: 'Cutive Mono', monospace;
+}
 #headeritems {
   display: flex;
   align-content: center;
@@ -46,7 +56,8 @@ header {
   .icon {
    margin: 0px 1px 0px 1px;
   }
-  hr {
+
+  #patternhr {
    border: none;
    background-image: url(../img/hr-img.png);
    background-repeat: repeat;
@@ -78,7 +89,6 @@ header {
 
 #listleft {
   position: absolute;
-  top: 1050px;
   font-size: 30px;
   right: 950px;
 }
@@ -86,36 +96,54 @@ header {
 
 #listright {
   position: absolute;
-  top: 1050px;
   right: 500px;
   font-size: 30px;
 }
 
 .recipelist {
+  top: 1020px;
   list-style-type: none;
+  font-family: 'Patrick Hand', cursive;
 }
 
 
 #authorsection {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
  }
-
  #authorleft {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;;
   align-items: center;
   flex-wrap: wrap;
   }
-
   #authorright {
     display: flex;
     align-items: center;
   }
-
-  #authorleft p {
-    margin: auto;
-    text-align: center;
-    float: right;
-   }
+   #logohr {
+    border-top: solid #000 1px;
+    margin: 50px 0;
+  }
+  #logohr:after {
+    content: url(../img/small-logo.png);
+    /* Controls the position of the logo */
+    left: 50%;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    /* Controls the whitespace around the symbol */
+    padding: 20px;
+    background: #fff;
+  }
+ footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+ }
+ h6{
+  margin: 0px 0px 0px 0px;
+ }
